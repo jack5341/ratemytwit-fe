@@ -87,7 +87,7 @@ export default function Home({ feedPosts }) {
             Login
           </Button>
 
-          <Anchor href="javascript:void(0)" onClick={() => setisLogin(false)} className="nes-text is-primary">Don't you have an account?</Anchor>
+          <Anchor href="javascript:void(0)" onClick={() => setisLogin(false)} className="nes-text is-primary">Don&apos;t you have an account?</Anchor>
         </Border>
         ) : (
         <Border title="Register">
@@ -105,8 +105,8 @@ export default function Home({ feedPosts }) {
       )}
 
       {feed && feed.map((e, index) =>
-        <Post className="message-list">
-          <Message key={index} className="message -left">
+        <Post key={index} className="message-list">
+          <Message className="message -left">
             <UserIcon className="nes-bcrikko" />
             <UserName className="nes-text is-primary">jack5341  </UserName>
             <TextBaloon className="nes-balloon from-left">
