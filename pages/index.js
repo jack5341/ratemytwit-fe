@@ -120,17 +120,17 @@ export default function Home({ feedPosts }) {
   )
 }
 
-export async function getStaticProps() {
-  const res = await axios({
-    method: "GET",
-    url: "http://localhost:8080/api/feed"
-  })
+// export async function getStaticProps() {
+//   const res = await axios({
+//     method: "GET",
+//     url: "http://localhost:8080/api/feed"
+//   })
 
-  const data = res.data
+//   const data = res.data
 
-  return {
-    props: {
-      feedPosts: data
-    },
-  }
-}
+//   return {
+//     props: {
+//       feedPosts: data
+//     },
+//   }
+// }
